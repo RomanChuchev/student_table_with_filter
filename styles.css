@@ -1,0 +1,162 @@
+body {
+    color: #0f141e;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container form {
+    margin-bottom: 0px;
+    margin-left: -1px;
+}
+
+.container div {
+    margin-bottom: 0px;
+}
+
+.container button {
+    margin-bottom: 0px;
+    margin-left: -1px;
+}
+
+.head {
+    background: -webkit-linear-gradient(right, rgb(0, 229, 255), rgba(0, 0, 255, 0.769) 33.3%, rgb(35, 35, 203), rgb(15, 15, 201), rgba(34, 34, 209, 0.769), rgb(0, 229, 255)) bottom no-repeat;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    max-width: 95%;
+    margin: auto;
+    padding: 10px 5px 20px 5px;
+    text-align: center;
+}
+
+div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+}
+
+input:invalid+span:after {
+    content: '✖';
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    content: '✓';
+    padding-left: 5px;
+}
+
+.btn {
+    border: 1px solid black;
+}
+
+.table {
+    width: 95%;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.tr,
+td {
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.table th {
+    background: -webkit-linear-gradient(right, rgb(0, 229, 255), rgba(0, 0, 255, 0.769), rgb(35, 35, 203), rgb(15, 15, 201), rgba(34, 34, 209, 0.769), rgb(0, 229, 255)) bottom no-repeat;
+    padding: 5px;
+    color: white;
+    margin-top: 0.25em;
+    text-align: center;
+}
+
+.table tr:nth-child(odd) {
+    background-color: rgba(0, 229, 255, 0.041);
+}
+
+.table tr:hover {
+    background-color: rgb(207, 255, 255);
+}
+
+.form input:focus {
+    background-color: rgba(207, 255, 255, 0.263);
+}
+
+.form input:hover {
+    background-color: rgba(207, 255, 255, 0.263);
+}
+
+.form-control {
+    background-color: transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.head div {
+    color: white;
+}
+
+.table thead th:last-child {
+    width: 7%;
+    background-color: transparent;
+}
+
+.btn-wrapper {
+    padding: 5px;
+    align-items: center;
+    background: transparent;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0.2rem 0.2rem;
+    border-bottom-width: 0px
+}
+
+.mb {
+    color: blue;
+    font-weight: 600;
+    border-color: blue;
+}
+
+.btn-danger {
+    background: transparent;
+}
+
+.btn-danger:hover {
+    background-color: red;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+    border-color: #ff0000;
+}
+
+.table tr {
+    vertical-align: baseline;
+}
+
+.ascending-th,
+.descending-th {
+    background-color: #445569 !important;
+}
+
+.ascending-th::after,
+.descending-th::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 3px;
+}
+
+.table tr {
+    text-align: center;
+}
+
+.table th:not(:last-child) {
+    cursor: pointer;
+}
