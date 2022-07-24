@@ -9,7 +9,6 @@ function createTableApp(container, table, key) {
 
     drawStudendFromLocalStorage()
     addSortingListeners()
-    addFilterListener(personArray)
 }
 
 //Функция, создающая форму для добавления студентов и кнопку
@@ -90,7 +89,6 @@ function createTable() {
     thead.id = 'tableHead'
     const tbody = document.createElement('tbody')
     tbody.id = 'tableBody'
-    console.log(tbody);
 
     const name = document.createElement('th')
     const date = document.createElement('th')
